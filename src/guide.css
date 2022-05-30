@@ -1,0 +1,121 @@
+.guidejs-guide-area{
+  position: relative;
+  background: #fff;
+  z-index: 99999999 !important;
+}
+
+.on-pointer-events{
+  pointer-events:none
+}
+
+.guidejs-mask{
+  position: fixed;
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999 !important;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
+}
+
+.guide-popover-item{
+  position: absolute;
+  background: #fff;
+  color: #2d2d2d;
+  margin: 0;
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 250px;
+  max-width: 300px;
+  z-index: 1000000000;
+}
+
+.guide-popover-title {
+  font: 19px/normal sans-serif;
+  margin: 0 0 5px;
+  font-weight: 700;
+  display: block;
+  position: relative;
+  line-height: 1.5;
+  zoom: 1;
+}
+
+.guide-popover-description{
+  margin-bottom: 0;
+  font: 14px/normal sans-serif;
+  line-height: 1.5;
+  color: #2d2d2d;
+  font-weight: 400;
+  zoom: 1;
+}
+.guide-popover-footer{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.guide-popover-close{
+
+}
+
+.guide-popover-navigation{
+  display: flex;
+  gap: 5px;
+}
+
+.guide-popover-navigation button{
+  color: #2d2d2d;
+  font: 11px/normal sans-serif;
+  cursor: pointer;
+  zoom: 1;
+  line-height: 1.3;
+}
+
+.guide-popover-prev-btn,.guide-popover-next-btn{
+  display: flex;
+  align-items: center;
+}
+
+.guide-popover-tip{
+    border: 5px solid #fff;
+    content: "";
+    position: absolute;
+}
+
+
+ .guide-popover-tip.x-center {
+  left: 49%;
+}
+.guide-popover-tip.y-center {
+  top: 47%;
+}
+
+.guide-popover-tip.bottom {
+  top: -10px;
+  border-color: transparent transparent #fff;
+}
+
+.guide-popover-tip.left {
+  right: -10px;
+  border-color: transparent transparent transparent #fff;
+}
+
+
+.guide-popover-tip.right {
+  left: -10px;
+  border-color: transparent #fff transparent transparent ;
+}
+
+
+.guide-popover-tip.top {
+  bottom: -10px;
+    border-color:#fff transparent  transparent transparent ;
+}
+
+.guide-anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}

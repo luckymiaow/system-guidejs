@@ -1,0 +1,21 @@
+{
+  "name": "system-guidejs",
+  "version": "1.0.1",
+  "description": "系统引导工具",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && npx postcss src/guide.css > lib/guide.min.css"
+  },
+  "author": "luckymiaow",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "cssnano": "^5.1.9",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0"
+  }
+}

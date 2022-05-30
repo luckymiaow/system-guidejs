@@ -18,6 +18,7 @@ export const GUIDE_POPOVER_CLOSE = "guide-popover-close";
 export const GUIDE_POPOVER_NAVIGATION = "guide-popover-navigation";
 export const GUIDE_POPOVER_PREV_BTN = "guide-popover-prev-btn";
 export const GUIDE_GUIDE_AREA = "guidejs-guide-area";
+export const GUIDE_ON_POINTER_EVENT = "on-pointer-events";
 export const GUIDE_MASK = "guidejs-mask";
 
 export type ElementTag = string | Array<string> | Element | Array<Element>;
@@ -45,6 +46,7 @@ export function clear() {
   const t = document.querySelectorAll("." + GUIDE_GUIDE_AREA);
   t.forEach((e) => {
     e.className = e.className.replace(GUIDE_GUIDE_AREA, "");
+    e.className = e.className.replace(GUIDE_ON_POINTER_EVENT, "");
   });
   const mask = document.getElementById(GUIDE_MASK);
   mask?.remove();

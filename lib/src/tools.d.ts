@@ -10,6 +10,7 @@ export declare const GUIDE_POPOVER_CLOSE = "guide-popover-close";
 export declare const GUIDE_POPOVER_NAVIGATION = "guide-popover-navigation";
 export declare const GUIDE_POPOVER_PREV_BTN = "guide-popover-prev-btn";
 export declare const GUIDE_GUIDE_AREA = "guidejs-guide-area";
+export declare const GUIDE_ON_POINTER_EVENT = "on-pointer-events";
 export declare const GUIDE_MASK = "guidejs-mask";
 export declare type ElementTag = string | Array<string> | Element | Array<Element>;
 export declare function getElement(dealEl: ElementTag): Element[];

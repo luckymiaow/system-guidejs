@@ -23,6 +23,7 @@ import {
   GUIDE_POPOVER_PREV_BTN,
   GUIDE_MASK,
   GUIDE_GUIDE_AREA,
+  GUIDE_ON_POINTER_EVENT,
 } from "./src/tools";
 
 export default class Guide {
@@ -90,7 +91,7 @@ export default class Guide {
   private createGuideArea = (el: Element[]) => {
     let pointerEvent = " ";
     if (this.pointerEvent === false && this.currentStep.pointerEvent != true) {
-      pointerEvent = pointerEvent + "on-pointer-events";
+      pointerEvent = pointerEvent + GUIDE_ON_POINTER_EVENT;
     }
     el.forEach((e) => {
       e.className = e.className + " " + GUIDE_GUIDE_AREA + pointerEvent;

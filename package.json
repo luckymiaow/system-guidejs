@@ -4,6 +4,7 @@
   "description": "系统引导工具",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "repository": "https://github.com/luckymiaow/system-guidejs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && npx postcss src/guide.css > lib/guide.min.css"
